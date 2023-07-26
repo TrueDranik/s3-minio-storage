@@ -1,0 +1,28 @@
+minio:
+  endpoint: "https://minio-server.reliab.tech"
+  credentials: #настроить переменное окружение
+    access_key: "UAF2TABSPU2A2L67DRT4"
+    secret_key: "f+HGmWNw11AMOE5cu7tB6KaW6Qx0IAI22aK7GDkx"
+
+application:
+  domain: https://tgsupbot.reliab.tech
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 10GB
+
+server:
+  servlet:
+    context-path: "/minio"
+  forwardHeadersStrategy: framework
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    csrf:
+      enabled: false
