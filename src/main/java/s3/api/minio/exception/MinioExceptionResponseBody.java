@@ -1,4 +1,4 @@
-package storage.minio.exception;
+package s3.api.minio.exception;
 
 import lombok.Builder;
 import lombok.Data;

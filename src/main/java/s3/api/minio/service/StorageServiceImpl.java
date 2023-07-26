@@ -1,4 +1,4 @@
-package storage.minio.service;
+package s3.api.minio.service;
 
 import io.minio.BucketExistsArgs;
 import io.minio.MakeBucketArgs;
@@ -7,8 +7,8 @@ import io.minio.messages.Bucket;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import storage.minio.exception.bucket.BucketInfoException;
-import storage.minio.exception.bucket.CreateBucketException;
+import s3.api.minio.exception.bucket.BucketInfoException;
+import s3.api.minio.exception.bucket.CreateBucketException;
 
 import java.util.List;
 

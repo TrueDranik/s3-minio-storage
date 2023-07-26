@@ -1,4 +1,4 @@
-package storage.minio.in.rest;
+package s3.api.minio.rest;
 
 import io.minio.messages.Item;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-import storage.minio.service.FileService;
+import s3.api.minio.service.FileService;
 
 import javax.validation.constraints.NotNull;
 import java.io.IOException;

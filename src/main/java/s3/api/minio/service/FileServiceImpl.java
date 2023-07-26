@@ -1,4 +1,4 @@
-package storage.minio.service;
+package s3.api.minio.service;
 
 import io.minio.GetObjectArgs;
 import io.minio.GetPresignedObjectUrlArgs;
@@ -19,15 +19,15 @@ import org.jetbrains.annotations.NotNull;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
-import storage.minio.exception.file.DeleteFileFromBucketException;
-import storage.minio.exception.file.FileExistInBucketException;
-import storage.minio.exception.file.FileNotFoundInBucketException;
-import storage.minio.exception.file.GetObjectInfoException;
-import storage.minio.exception.file.InputFileException;
-import storage.minio.exception.file.ListObjectException;
-import storage.minio.exception.file.UpdateFileException;
-import storage.minio.exception.file.UploadFileException;
-import storage.minio.exception.file.UrlFileException;
+import s3.api.minio.exception.file.DeleteFileFromBucketException;
+import s3.api.minio.exception.file.FileExistInBucketException;
+import s3.api.minio.exception.file.FileNotFoundInBucketException;
+import s3.api.minio.exception.file.GetObjectInfoException;
+import s3.api.minio.exception.file.InputFileException;
+import s3.api.minio.exception.file.ListObjectException;
+import s3.api.minio.exception.file.UpdateFileException;
+import s3.api.minio.exception.file.UploadFileException;
+import s3.api.minio.exception.file.UrlFileException;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -96,7 +96,6 @@ public class FileServiceImpl implements FileService {
             throw new UploadFileException();
         }
     }
-
 
     @Override
     public String getUrl(String bucketName, @Nullable String packageName, String fileName, @Nullable Integer seconds) {

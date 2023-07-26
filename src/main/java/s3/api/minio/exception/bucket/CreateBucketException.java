@@ -1,4 +1,4 @@
-package storage.minio.exception.bucket;
+package s3.api.minio.exception.bucket;
 
 public class CreateBucketException extends ServerBucketException {
 

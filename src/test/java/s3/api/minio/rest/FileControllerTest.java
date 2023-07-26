@@ -1,4 +1,4 @@
-package storage.minio.in.rest;
+package s3.api.minio.rest;
 
 import io.minio.messages.Contents;
 import io.minio.messages.Item;
@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
-import storage.minio.service.FileService;
+import s3.api.minio.service.FileService;
 
 import java.util.List;
 

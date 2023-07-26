@@ -1,4 +1,4 @@
-package storage.minio.service;
+package s3.api.minio.service;
 
 import io.minio.messages.Item;
 import org.springframework.lang.Nullable;

@@ -1,9 +1,9 @@
-package storage.minio.config;
+package s3.api.minio.config;
 
 import io.minio.MinioClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import storage.minio.config.properties.MinioProperties;
+import s3.api.minio.config.properties.MinioProperties;
 
 @Configuration
 public class MinioConfig {

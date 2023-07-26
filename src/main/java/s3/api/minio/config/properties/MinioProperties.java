@@ -1,4 +1,4 @@
-package storage.minio.config.properties;
+package s3.api.minio.config.properties;
 
 import lombok.Data;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package storage.minio.config;
+package s3.api.minio.config;
 
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,7 +1,6 @@
-package storage.minio.in.rest;
+package s3.api.minio.rest;
 
 import io.minio.messages.Bucket;
-import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
-import storage.minio.service.StorageService;
+import s3.api.minio.service.StorageService;
 
 import java.lang.reflect.Field;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package storage.minio.in.rest.handler;
+package s3.api.minio.rest.handler;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
-import storage.minio.exception.MinioExceptionResponseBody;
-import storage.minio.exception.bucket.ServerBucketException;
-import storage.minio.exception.file.FileNotFoundInBucketException;
-import storage.minio.exception.file.InputFileException;
-import storage.minio.exception.file.ServerFileException;
+import s3.api.minio.exception.MinioExceptionResponseBody;
+import s3.api.minio.exception.bucket.ServerBucketException;
+import s3.api.minio.exception.file.FileNotFoundInBucketException;
+import s3.api.minio.exception.file.InputFileException;
+import s3.api.minio.exception.file.ServerFileException;
 
 @ResponseBody
 @ControllerAdvice
